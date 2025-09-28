@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Menentukan bahwa dokumen ini menggunakan HTML5 -->
+<html lang="en"> <!-- Elemen utama pembungkus seluruh isi halaman dan menentukan bahasa -->
+<head> <!-- Bagian head berisi informasi meta dan judul halaman -->
+    <meta charset="UTF-8" /> <!-- Menentukan karakter encoding agar teks tampil dengan benar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Membuat halaman responsif di berbagai perangkat -->
+    <title>Profil Pribadi</title> <!-- Menentukan judul yang tampil di tab browser -->
+</head>
+
+<body> <!-- Bagian utama tempat konten halaman ditampilkan -->
+
+    <div> <!-- Mengelompokkan bagian profil pribadi -->
+        <table> <!-- Menggunakan tabel untuk menata foto dan video dalam satu baris -->
+            <tr>
+                <th colspan="2" align="left"><h1>Profil Pribadi</h1></th> <!-- Judul utama halaman -->
+            </tr>
+            <tr>
+                <th>Foto Profil</th> <!-- Kolom untuk foto -->
+                <th>Video Perkenalan</th> <!-- Kolom untuk video -->
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://github.com/shanyaa1/modul-3-web-pro/blob/main/nia.jpg?raw=true" 
+                         alt="Foto Profil Shania Rahmalia" width="200" /> <!-- Menampilkan foto profil -->
+                </td>
+                <td>
+                    <iframe width="320" height="240" 
+                        src="https://www.youtube.com/embed/TcwrTWuam-Q?si=cuH5sWRYnn_yqqh_" 
+                        title="Video Perkenalan" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe> <!-- Menyematkan video perkenalan dari YouTube -->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div> <!-- Mengelompokkan bagian deskripsi pribadi -->
+        <h2>Tentang Saya</h2> <!-- Subjudul untuk bagian deskripsi -->
+        <p>Halo! Saya adalah Nia, mahasiswa Teknologi Informasi di Universitas Telkom.</p> <!-- Paragraf berisi deskripsi singkat diri -->
+    </div>
+
+    <div> <!-- Mengelompokkan bagian keterampilan -->
+        <h2>Keterampilan</h2> <!-- Subjudul untuk bagian keterampilan -->
+        <table cellpadding="8"> <!-- Tabel untuk menampilkan daftar keterampilan tanpa border -->
+            <tr>
+                <th>Keterampilan</th> <!-- Kolom untuk jenis keterampilan -->
+                <th>Tingkat</th> <!-- Kolom untuk tingkat kemampuan -->
+            </tr>
+            <tr>
+                <td>HTML & CSS</td>
+                <td>Mahir</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Menengah</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Pemula</td>
+            </tr>
+        </table>
+    </div>
+
+    <div> <!-- Mengelompokkan form untuk menghubungi -->
+        <h2>Hubungi Saya</h2> <!-- Subjudul untuk bagian form kontak -->
+        <form action=""> <!-- Elemen form untuk mengirimkan data pengguna -->
+            <table> <!-- Tabel untuk merapikan input nama dan email -->
+                <tr>
+                    <td>Nama :</td>
+                    <td><input type="text" /></td> <!-- Input teks untuk nama -->
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="text" /></td> <!-- Input teks untuk email -->
+                </tr>
+            </table>
+            <p>Pesan :</p> <!-- Label untuk area pesan -->
+            <textarea name="pesan" id="" rows="4" cols="50"></textarea> <!-- Area teks untuk menulis pesan -->
+            <br><br>
+            <input type="submit" value="Kirim Pesan" /> <!-- Tombol kirim untuk mengirim form -->
+        </form>
+    </div>
+
+    <div> <!-- Mengelompokkan bagian media sosial -->
+        <h2>Media Sosial</h2> <!-- Subjudul bagian media sosial -->
+        <a href="https://www.instagram.com/shaniarhh?igsh=MTlkemFyYWp5MHMxZA%3D%3D&utm_source=qr" 
+           target="_blank" rel="noopener noreferrer">Instagram</a> <!-- Tautan menuju Instagram -->
+        | 
+        <a href="https://github.com/shanyaa1" target="_blank" rel="noopener noreferrer">GitHub</a> <!-- Tautan menuju GitHub -->
+        | 
+        <a href="https://www.linkedin.com/in/shania-rahmalia-93700629a/" target="_blank" rel="noopener noreferrer">LinkedIn</a> <!-- Tautan menuju LinkedIn -->
+    </div>
+
+</body>
+</html>
